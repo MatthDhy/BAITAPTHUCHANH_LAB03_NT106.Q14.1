@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36202.13 d17.14
+VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai01", "Bai01\Bai01.csproj", "{74D6B3CE-0871-4D73-AFD0-45B845C2CF5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai01", "Bai01\Bai01.csproj", "{8ACC89CB-F4D4-4A1B-9380-4C2623D4858B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bai02", "Bai02\Bai02.csproj", "{11B00D81-C474-4F97-9D56-3667C95E0A6C}"
 EndProject
@@ -21,10 +21,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{74D6B3CE-0871-4D73-AFD0-45B845C2CF5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74D6B3CE-0871-4D73-AFD0-45B845C2CF5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74D6B3CE-0871-4D73-AFD0-45B845C2CF5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74D6B3CE-0871-4D73-AFD0-45B845C2CF5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACC89CB-F4D4-4A1B-9380-4C2623D4858B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACC89CB-F4D4-4A1B-9380-4C2623D4858B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACC89CB-F4D4-4A1B-9380-4C2623D4858B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACC89CB-F4D4-4A1B-9380-4C2623D4858B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{11B00D81-C474-4F97-9D56-3667C95E0A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{11B00D81-C474-4F97-9D56-3667C95E0A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11B00D81-C474-4F97-9D56-3667C95E0A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
