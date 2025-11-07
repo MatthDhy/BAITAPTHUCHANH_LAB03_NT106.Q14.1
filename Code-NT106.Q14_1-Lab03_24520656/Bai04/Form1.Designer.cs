@@ -28,13 +28,164 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.panelSeats = new System.Windows.Forms.Panel();
+            this.btnB3 = new System.Windows.Forms.Button();
+            this.btnB2 = new System.Windows.Forms.Button();
+            this.btnB1 = new System.Windows.Forms.Button();
+            this.btnA3 = new System.Windows.Forms.Button();
+            this.btnA2 = new System.Windows.Forms.Button();
+            this.btnA1 = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnStartServer = new System.Windows.Forms.Button();
+            this.labelScreen = new System.Windows.Forms.Label();
+            this.panelSeats.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelSeats
+            // 
+            this.panelSeats.BackColor = System.Drawing.Color.Gainsboro;
+            this.panelSeats.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSeats.Controls.Add(this.btnB3);
+            this.panelSeats.Controls.Add(this.btnB2);
+            this.panelSeats.Controls.Add(this.btnB1);
+            this.panelSeats.Controls.Add(this.btnA3);
+            this.panelSeats.Controls.Add(this.btnA2);
+            this.panelSeats.Controls.Add(this.btnA1);
+            this.panelSeats.Location = new System.Drawing.Point(23, 104);
+            this.panelSeats.Name = "panelSeats";
+            this.panelSeats.Size = new System.Drawing.Size(376, 137);
+            this.panelSeats.TabIndex = 0;
+            // 
+            // btnB3
+            // 
+            this.btnB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnB3.Location = new System.Drawing.Point(267, 76);
+            this.btnB3.Name = "btnB3";
+            this.btnB3.Size = new System.Drawing.Size(89, 41);
+            this.btnB3.TabIndex = 5;
+            this.btnB3.Text = "B3";
+            this.btnB3.UseVisualStyleBackColor = true;
+            // 
+            // btnB2
+            // 
+            this.btnB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnB2.Location = new System.Drawing.Point(145, 76);
+            this.btnB2.Name = "btnB2";
+            this.btnB2.Size = new System.Drawing.Size(89, 41);
+            this.btnB2.TabIndex = 4;
+            this.btnB2.Text = "B2";
+            this.btnB2.UseVisualStyleBackColor = true;
+            // 
+            // btnB1
+            // 
+            this.btnB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnB1.Location = new System.Drawing.Point(23, 76);
+            this.btnB1.Name = "btnB1";
+            this.btnB1.Size = new System.Drawing.Size(89, 41);
+            this.btnB1.TabIndex = 3;
+            this.btnB1.Text = "B1";
+            this.btnB1.UseVisualStyleBackColor = true;
+            // 
+            // btnA3
+            // 
+            this.btnA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnA3.Location = new System.Drawing.Point(267, 19);
+            this.btnA3.Name = "btnA3";
+            this.btnA3.Size = new System.Drawing.Size(89, 41);
+            this.btnA3.TabIndex = 2;
+            this.btnA3.Text = "A3";
+            this.btnA3.UseVisualStyleBackColor = true;
+            // 
+            // btnA2
+            // 
+            this.btnA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnA2.Location = new System.Drawing.Point(145, 19);
+            this.btnA2.Name = "btnA2";
+            this.btnA2.Size = new System.Drawing.Size(89, 41);
+            this.btnA2.TabIndex = 1;
+            this.btnA2.Text = "A2";
+            this.btnA2.UseVisualStyleBackColor = true;
+            // 
+            // btnA1
+            // 
+            this.btnA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnA1.Location = new System.Drawing.Point(23, 19);
+            this.btnA1.Name = "btnA1";
+            this.btnA1.Size = new System.Drawing.Size(89, 41);
+            this.btnA1.TabIndex = 0;
+            this.btnA1.Text = "A1";
+            this.btnA1.UseVisualStyleBackColor = true;
+            // 
+            // btnStartServer
+            // 
+            this.btnStartServer.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.btnStartServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStartServer.Location = new System.Drawing.Point(23, 260);
+            this.btnStartServer.Name = "btnStartServer";
+            this.btnStartServer.Size = new System.Drawing.Size(185, 44);
+            this.btnStartServer.TabIndex = 1;
+            this.btnStartServer.Text = "START SERVER";
+            this.btnStartServer.UseVisualStyleBackColor = false;
+            this.btnStartServer.Click += new System.EventHandler(this.btnStartServer_Click);
+
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(214, 260);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(185, 44);
+            this.btnReset.TabIndex = 3;
+            this.btnReset.Text = "RESET VÉ";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // labelScreen
+            // 
+            this.labelScreen.BackColor = System.Drawing.Color.DimGray;
+            this.labelScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelScreen.ForeColor = System.Drawing.Color.White;
+            this.labelScreen.Location = new System.Drawing.Point(23, 27);
+            this.labelScreen.Name = "labelScreen";
+            this.labelScreen.Size = new System.Drawing.Size(376, 51);
+            this.labelScreen.TabIndex = 2;
+            this.labelScreen.Text = "MÀN HÌNH";
+            this.labelScreen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(422, 321);
+            this.Controls.Add(this.labelScreen);
+            this.Controls.Add(this.btnStartServer);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.panelSeats);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Form1";
+            this.Text = "Quầy Bán Vé (Client + Server)";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.panelSeats.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelSeats;
+        private System.Windows.Forms.Button btnA1;
+        private System.Windows.Forms.Button btnB3;
+        private System.Windows.Forms.Button btnB2;
+        private System.Windows.Forms.Button btnB1;
+        private System.Windows.Forms.Button btnA3;
+        private System.Windows.Forms.Button btnA2;
+        private System.Windows.Forms.Button btnStartServer;
+        private System.Windows.Forms.Label labelScreen;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 
