@@ -1,6 +1,6 @@
 ﻿namespace Bai04
 {
-    partial class Form1
+    partial class FormBai04
     {
         /// <summary>
         /// Required designer variable.
