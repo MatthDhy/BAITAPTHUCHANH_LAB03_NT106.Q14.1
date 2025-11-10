@@ -46,10 +46,13 @@ namespace Bai03
             byte[] buffer = new byte[1024];
             int bytes;
 
-            while ((bytes = stream.Read(buffer, 0, buffer.Length)) > 0)
+            using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
             {
-                string msg = Encoding.UTF8.GetString(buffer, 0, bytes);
-                listBoxMessage.Items.Add("Client: " + msg);
+                string msg;
+                while ((msg = reader.ReadLine()) != null)
+                {
+                    listBoxMessage.Items.Add("Client: " + msg);
+                }
             }
         }
 
