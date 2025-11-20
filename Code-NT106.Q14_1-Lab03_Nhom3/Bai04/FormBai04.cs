@@ -48,12 +48,13 @@ namespace Bai04
 
             btnStartServer.Enabled = false;
             btnStartServer.Text = "Server Đang Chạy...";
+            btnConnect.Enabled = false;
 
             Task.Delay(500).ContinueWith(_ =>
             {
                 this.Invoke((MethodInvoker)delegate
                 {
-                    ConnectToServer();
+                    ConnectToServer("127.0.0.1");
                 });
             });
         }
@@ -69,29 +70,43 @@ namespace Bai04
             btnReset.Enabled = false;
         }
 
-        private void ConnectToServer()
+        private void ConnectToServer(string ipAddress) 
         {
             try
             {
-                client = new TcpClient("127.0.0.1", 8888);
+                client = new TcpClient(ipAddress, 8888);
                 stream = client.GetStream();
 
                 listeningTask = Task.Run(() => ListenForServerUpdates());
-
                 SendMessage("GET_SEATS");
 
                 panelSeats.Enabled = true;
                 btnReset.Enabled = true;
-                MessageBox.Show("Đã kết nối Server thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show($"Đã kết nối đến {ipAddress} thành công!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Chưa kết nối được Server: " + ex.Message);
-
+                MessageBox.Show("Lỗi kết nối: " + ex.Message + "\nKiểm tra lại IP hoặc Tường lửa (Firewall).");
                 btnStartServer.Enabled = true;
-                btnStartServer.Text = "START SERVER";
+                btnConnect.Enabled = true;
             }
         }
+
+        private void btnConnect_Click(object sender, EventArgs e)
+        {
+            string ip = txtServerIP.Text.Trim();
+            if (string.IsNullOrEmpty(ip))
+            {
+                MessageBox.Show("Vui lòng nhập IP của máy Server!");
+                return;
+            }
+
+            btnConnect.Enabled = false;
+            btnStartServer.Enabled = false;
+
+            ConnectToServer(ip);
+        }
+
         private void btnReset_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có chắc muốn reset TẤT CẢ vé đã đặt không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
