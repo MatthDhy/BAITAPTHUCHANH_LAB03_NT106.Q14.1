@@ -13,6 +13,10 @@ namespace Bai06
 {
     public partial class MainForm : Form
     {
+        public MainForm()
+        {
+            InitializeComponent();
+        }
         private ChatServer server;
         private ChatClient client;
         private int port = 8080;
