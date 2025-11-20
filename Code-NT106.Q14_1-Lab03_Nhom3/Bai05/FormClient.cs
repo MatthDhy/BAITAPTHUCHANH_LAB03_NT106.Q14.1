@@ -89,5 +89,10 @@ namespace Bai05
             FormView f = new FormView();
             f.ShowDialog();
         }
+
+        private void FormClient_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

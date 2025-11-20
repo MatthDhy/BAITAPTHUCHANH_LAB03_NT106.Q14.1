@@ -94,9 +94,9 @@
             // btnRandom
             // 
             this.btnRandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRandom.Location = new System.Drawing.Point(74, 183);
+            this.btnRandom.Location = new System.Drawing.Point(38, 183);
             this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(160, 50);
+            this.btnRandom.Size = new System.Drawing.Size(213, 50);
             this.btnRandom.TabIndex = 5;
             this.btnRandom.Text = "Hôm nay ăn gì??";
             this.btnRandom.UseVisualStyleBackColor = true;
@@ -105,9 +105,9 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(303, 183);
+            this.btnAdd.Location = new System.Drawing.Point(298, 183);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(160, 50);
+            this.btnAdd.Size = new System.Drawing.Size(213, 50);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Thêm món ăn";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -116,9 +116,9 @@
             // btnView
             // 
             this.btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnView.Location = new System.Drawing.Point(552, 183);
+            this.btnView.Location = new System.Drawing.Point(561, 183);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(160, 50);
+            this.btnView.Size = new System.Drawing.Size(213, 50);
             this.btnView.TabIndex = 7;
             this.btnView.Text = "Danh sách món ăn";
             this.btnView.UseVisualStyleBackColor = true;
@@ -168,6 +168,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormClient";
             this.Text = "FormClient";
+            this.Load += new System.EventHandler(this.FormClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picFood)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
