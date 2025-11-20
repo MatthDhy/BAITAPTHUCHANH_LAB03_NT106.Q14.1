@@ -172,5 +172,6 @@ namespace Bai06
             try { server?.Stop(); } catch { }
             try { client?.Disconnect(); } catch { }
         }
+
     }
 }

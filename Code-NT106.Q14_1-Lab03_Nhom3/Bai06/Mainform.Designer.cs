@@ -58,7 +58,7 @@
             this.rbClient.AutoSize = true;
             this.rbClient.Location = new System.Drawing.Point(83, 25);
             this.rbClient.Name = "rbClient";
-            this.rbClient.Size = new System.Drawing.Size(51, 19);
+            this.rbClient.Size = new System.Drawing.Size(61, 20);
             this.rbClient.TabIndex = 1;
             this.rbClient.Text = "Client";
             this.rbClient.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@
             this.rbServer.Checked = true;
             this.rbServer.Location = new System.Drawing.Point(15, 25);
             this.rbServer.Name = "rbServer";
-            this.rbServer.Size = new System.Drawing.Size(56, 19);
+            this.rbServer.Size = new System.Drawing.Size(68, 20);
             this.rbServer.TabIndex = 0;
             this.rbServer.TabStop = true;
             this.rbServer.Text = "Server";
@@ -80,7 +80,7 @@
             this.lblPort.AutoSize = true;
             this.lblPort.Location = new System.Drawing.Point(190, 19);
             this.lblPort.Name = "lblPort";
-            this.lblPort.Size = new System.Drawing.Size(31, 15);
+            this.lblPort.Size = new System.Drawing.Size(34, 16);
             this.lblPort.TabIndex = 1;
             this.lblPort.Text = "Port:";
             // 
@@ -88,7 +88,7 @@
             // 
             this.txtPort.Location = new System.Drawing.Point(227, 16);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(60, 23);
+            this.txtPort.Size = new System.Drawing.Size(60, 22);
             this.txtPort.TabIndex = 2;
             this.txtPort.Text = "8080";
             // 
@@ -97,7 +97,7 @@
             this.lblIP.AutoSize = true;
             this.lblIP.Location = new System.Drawing.Point(190, 45);
             this.lblIP.Name = "lblIP";
-            this.lblIP.Size = new System.Drawing.Size(56, 15);
+            this.lblIP.Size = new System.Drawing.Size(65, 16);
             this.lblIP.TabIndex = 3;
             this.lblIP.Text = "Server IP:";
             // 
@@ -105,7 +105,7 @@
             // 
             this.txtServerIP.Location = new System.Drawing.Point(252, 42);
             this.txtServerIP.Name = "txtServerIP";
-            this.txtServerIP.Size = new System.Drawing.Size(150, 23);
+            this.txtServerIP.Size = new System.Drawing.Size(150, 22);
             this.txtServerIP.TabIndex = 4;
             this.txtServerIP.Text = "127.0.0.1";
             // 
@@ -124,7 +124,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(620, 19);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(41, 15);
+            this.lblName.Size = new System.Drawing.Size(47, 16);
             this.lblName.TabIndex = 6;
             this.lblName.Text = "Name:";
             // 
@@ -132,7 +132,7 @@
             // 
             this.txtName.Location = new System.Drawing.Point(667, 16);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(120, 23);
+            this.txtName.Size = new System.Drawing.Size(120, 22);
             this.txtName.TabIndex = 7;
             this.txtName.Text = "User1234";
             // 
@@ -147,10 +147,10 @@
             // lstUsers
             // 
             this.lstUsers.FormattingEnabled = true;
-            this.lstUsers.ItemHeight = 15;
+            this.lstUsers.ItemHeight = 16;
             this.lstUsers.Location = new System.Drawing.Point(12, 110);
             this.lstUsers.Name = "lstUsers";
-            this.lstUsers.Size = new System.Drawing.Size(150, 379);
+            this.lstUsers.Size = new System.Drawing.Size(150, 372);
             this.lstUsers.TabIndex = 9;
             // 
             // txtLog
@@ -167,7 +167,7 @@
             // 
             this.txtMessage.Location = new System.Drawing.Point(12, 505);
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(620, 23);
+            this.txtMessage.Size = new System.Drawing.Size(620, 22);
             this.txtMessage.TabIndex = 11;
             // 
             // btnSend
@@ -212,6 +212,7 @@
             this.grpMode.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
