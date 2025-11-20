@@ -26,15 +26,36 @@ namespace Bai05
         private async void btnLogin_Click(object sender, EventArgs e)
         {
             userName = txtName.Text.Trim();
-            if (userName == "") { MessageBox.Show("Nhập tên trước!"); return; }
+            if (userName == "")
+            {
+                MessageBox.Show("Nhập tên trước!");
+                return;
+            }
+
+            string ip = txtIP.Text.Trim();
+            if (ip == "")
+            {
+                MessageBox.Show("Nhập IP server trước!");
+                return;
+            }
 
             client = new TcpClient();
-            await client.ConnectAsync("127.0.0.1", 8080);
+            try
+            {
+                await client.ConnectAsync(ip, 8080); // ← IP nhập từ textbox
+            }
+            catch
+            {
+                MessageBox.Show("Không thể kết nối tới server!");
+                return;
+            }
+
             ns = client.GetStream();
             await SendAsync("login|" + userName);
             connected = true;
             _ = ListenAsync();
         }
+
 
         private async Task ListenAsync()
         {

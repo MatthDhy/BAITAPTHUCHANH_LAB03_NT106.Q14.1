@@ -39,6 +39,8 @@
             this.picFood = new System.Windows.Forms.PictureBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.rtbClientStatus = new System.Windows.Forms.RichTextBox();
+            this.txtIP = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picFood)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +66,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(170, 75);
+            this.txtName.Location = new System.Drawing.Point(134, 75);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 22);
             this.txtName.TabIndex = 2;
@@ -72,7 +74,7 @@
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(441, 75);
+            this.btnLogin.Location = new System.Drawing.Point(552, 75);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(160, 50);
             this.btnLogin.TabIndex = 3;
@@ -150,11 +152,30 @@
             this.rtbClientStatus.TabIndex = 10;
             this.rtbClientStatus.Text = "";
             // 
+            // txtIP
+            // 
+            this.txtIP.Location = new System.Drawing.Point(353, 75);
+            this.txtIP.Name = "txtIP";
+            this.txtIP.Size = new System.Drawing.Size(130, 22);
+            this.txtIP.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(299, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 20);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "IP: ";
+            // 
             // FormClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 459);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtIP);
             this.Controls.Add(this.rtbClientStatus);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.picFood);
@@ -187,5 +208,7 @@
         private System.Windows.Forms.PictureBox picFood;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.RichTextBox rtbClientStatus;
+        private System.Windows.Forms.TextBox txtIP;
+        private System.Windows.Forms.Label label3;
     }
 }
