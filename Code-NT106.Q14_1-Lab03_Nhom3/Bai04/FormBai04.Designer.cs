@@ -40,6 +40,8 @@
             this.labelScreen = new System.Windows.Forms.Label();
             this.txtServerIP = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
+            this.txtIP = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelSeats.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,19 +55,19 @@
             this.panelSeats.Controls.Add(this.btnA3);
             this.panelSeats.Controls.Add(this.btnA2);
             this.panelSeats.Controls.Add(this.btnA1);
-            this.panelSeats.Location = new System.Drawing.Point(34, 160);
-            this.panelSeats.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panelSeats.Location = new System.Drawing.Point(30, 128);
+            this.panelSeats.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelSeats.Name = "panelSeats";
-            this.panelSeats.Size = new System.Drawing.Size(563, 210);
+            this.panelSeats.Size = new System.Drawing.Size(501, 168);
             this.panelSeats.TabIndex = 0;
             // 
             // btnB3
             // 
             this.btnB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnB3.Location = new System.Drawing.Point(400, 117);
-            this.btnB3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnB3.Location = new System.Drawing.Point(356, 94);
+            this.btnB3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnB3.Name = "btnB3";
-            this.btnB3.Size = new System.Drawing.Size(134, 63);
+            this.btnB3.Size = new System.Drawing.Size(119, 50);
             this.btnB3.TabIndex = 5;
             this.btnB3.Text = "B3";
             this.btnB3.UseVisualStyleBackColor = true;
@@ -73,10 +75,10 @@
             // btnB2
             // 
             this.btnB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnB2.Location = new System.Drawing.Point(218, 117);
-            this.btnB2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnB2.Location = new System.Drawing.Point(194, 94);
+            this.btnB2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnB2.Name = "btnB2";
-            this.btnB2.Size = new System.Drawing.Size(134, 63);
+            this.btnB2.Size = new System.Drawing.Size(119, 50);
             this.btnB2.TabIndex = 4;
             this.btnB2.Text = "B2";
             this.btnB2.UseVisualStyleBackColor = true;
@@ -84,10 +86,10 @@
             // btnB1
             // 
             this.btnB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnB1.Location = new System.Drawing.Point(34, 117);
-            this.btnB1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnB1.Location = new System.Drawing.Point(30, 94);
+            this.btnB1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnB1.Name = "btnB1";
-            this.btnB1.Size = new System.Drawing.Size(134, 63);
+            this.btnB1.Size = new System.Drawing.Size(119, 50);
             this.btnB1.TabIndex = 3;
             this.btnB1.Text = "B1";
             this.btnB1.UseVisualStyleBackColor = true;
@@ -95,10 +97,10 @@
             // btnA3
             // 
             this.btnA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnA3.Location = new System.Drawing.Point(400, 29);
-            this.btnA3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnA3.Location = new System.Drawing.Point(356, 23);
+            this.btnA3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnA3.Name = "btnA3";
-            this.btnA3.Size = new System.Drawing.Size(134, 63);
+            this.btnA3.Size = new System.Drawing.Size(119, 50);
             this.btnA3.TabIndex = 2;
             this.btnA3.Text = "A3";
             this.btnA3.UseVisualStyleBackColor = true;
@@ -106,10 +108,10 @@
             // btnA2
             // 
             this.btnA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnA2.Location = new System.Drawing.Point(218, 29);
-            this.btnA2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnA2.Location = new System.Drawing.Point(194, 23);
+            this.btnA2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnA2.Name = "btnA2";
-            this.btnA2.Size = new System.Drawing.Size(134, 63);
+            this.btnA2.Size = new System.Drawing.Size(119, 50);
             this.btnA2.TabIndex = 1;
             this.btnA2.Text = "A2";
             this.btnA2.UseVisualStyleBackColor = true;
@@ -117,10 +119,10 @@
             // btnA1
             // 
             this.btnA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnA1.Location = new System.Drawing.Point(34, 29);
-            this.btnA1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnA1.Location = new System.Drawing.Point(30, 23);
+            this.btnA1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnA1.Name = "btnA1";
-            this.btnA1.Size = new System.Drawing.Size(134, 63);
+            this.btnA1.Size = new System.Drawing.Size(119, 50);
             this.btnA1.TabIndex = 0;
             this.btnA1.Text = "A1";
             this.btnA1.UseVisualStyleBackColor = true;
@@ -130,10 +132,10 @@
             this.btnReset.BackColor = System.Drawing.Color.OrangeRed;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(321, 400);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReset.Location = new System.Drawing.Point(285, 320);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(278, 68);
+            this.btnReset.Size = new System.Drawing.Size(247, 54);
             this.btnReset.TabIndex = 3;
             this.btnReset.Text = "RESET VÉ";
             this.btnReset.UseVisualStyleBackColor = false;
@@ -143,10 +145,10 @@
             // 
             this.btnStartServer.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnStartServer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStartServer.Location = new System.Drawing.Point(34, 400);
-            this.btnStartServer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnStartServer.Location = new System.Drawing.Point(30, 320);
+            this.btnStartServer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStartServer.Name = "btnStartServer";
-            this.btnStartServer.Size = new System.Drawing.Size(278, 68);
+            this.btnStartServer.Size = new System.Drawing.Size(247, 54);
             this.btnStartServer.TabIndex = 1;
             this.btnStartServer.Text = "START SERVER";
             this.btnStartServer.UseVisualStyleBackColor = false;
@@ -157,20 +159,20 @@
             this.labelScreen.BackColor = System.Drawing.Color.DimGray;
             this.labelScreen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelScreen.ForeColor = System.Drawing.Color.White;
-            this.labelScreen.Location = new System.Drawing.Point(34, 42);
+            this.labelScreen.Location = new System.Drawing.Point(30, 34);
             this.labelScreen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelScreen.Name = "labelScreen";
-            this.labelScreen.Size = new System.Drawing.Size(564, 78);
+            this.labelScreen.Size = new System.Drawing.Size(501, 62);
             this.labelScreen.TabIndex = 2;
             this.labelScreen.Text = "MÀN HÌNH";
             this.labelScreen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtServerIP
             // 
-            this.txtServerIP.Location = new System.Drawing.Point(34, 338);
-            this.txtServerIP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtServerIP.Location = new System.Drawing.Point(30, 270);
+            this.txtServerIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtServerIP.Name = "txtServerIP";
-            this.txtServerIP.Size = new System.Drawing.Size(276, 26);
+            this.txtServerIP.Size = new System.Drawing.Size(246, 22);
             this.txtServerIP.TabIndex = 4;
             this.txtServerIP.Text = "127.0.0.1";
             // 
@@ -178,20 +180,40 @@
             // 
             this.btnConnect.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnConnect.Location = new System.Drawing.Point(180, 478);
-            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConnect.Location = new System.Drawing.Point(30, 382);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(278, 68);
+            this.btnConnect.Size = new System.Drawing.Size(247, 54);
             this.btnConnect.TabIndex = 5;
             this.btnConnect.Text = "CONNECT (CLIENT)";
             this.btnConnect.UseVisualStyleBackColor = false;
             this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
+            // txtIP
+            // 
+            this.txtIP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtIP.Location = new System.Drawing.Point(382, 406);
+            this.txtIP.Name = "txtIP";
+            this.txtIP.Size = new System.Drawing.Size(149, 30);
+            this.txtIP.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(294, 411);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 25);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Nhập IP";
+            // 
             // FormBai04
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 584);
+            this.ClientSize = new System.Drawing.Size(556, 467);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtIP);
             this.Controls.Add(this.labelScreen);
             this.Controls.Add(this.btnStartServer);
             this.Controls.Add(this.btnReset);
@@ -199,7 +221,7 @@
             this.Controls.Add(this.txtServerIP);
             this.Controls.Add(this.btnConnect);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FormBai04";
             this.Text = "Quầy Bán Vé (Client + Server)";
@@ -225,6 +247,8 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.TextBox txtServerIP;
         private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.TextBox txtIP;
+        private System.Windows.Forms.Label label1;
     }
 }
 

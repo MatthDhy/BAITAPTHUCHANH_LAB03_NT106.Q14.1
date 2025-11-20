@@ -54,7 +54,8 @@ namespace Bai04
             {
                 this.Invoke((MethodInvoker)delegate
                 {
-                    ConnectToServer("127.0.0.1");
+                    string ip = txtIP.Text.Trim();
+                    ConnectToServer(ip);
                 });
             });
         }
@@ -94,7 +95,7 @@ namespace Bai04
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            string ip = txtServerIP.Text.Trim();
+            string ip = txtIP.Text.Trim();
             if (string.IsNullOrEmpty(ip))
             {
                 MessageBox.Show("Vui lòng nhập IP của máy Server!");
