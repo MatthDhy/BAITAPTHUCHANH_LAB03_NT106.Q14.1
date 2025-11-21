@@ -97,10 +97,10 @@ namespace Bai04
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bai04.Properties.Resources.Gemini_Generated_Image_v0h1rzv0h1rzv0h1_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(123, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 120);
+            this.pictureBox1.Size = new System.Drawing.Size(252, 154);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -119,7 +119,6 @@ namespace Bai04
             this.btnConnect.TabIndex = 4;
             this.btnConnect.Text = "CONNECT";
             this.btnConnect.UseVisualStyleBackColor = false;
-            this.btnConnect.Click += btnConnect_Click;
             // 
             // txtServerIP
             // 
@@ -201,7 +200,6 @@ namespace Bai04
             this.btnBook.TabIndex = 10;
             this.btnBook.Text = "ĐẶT VÉ";
             this.btnBook.UseVisualStyleBackColor = false;
-            this.btnBook.Click += btnBook_Click;
             // 
             // cbMovie
             // 
