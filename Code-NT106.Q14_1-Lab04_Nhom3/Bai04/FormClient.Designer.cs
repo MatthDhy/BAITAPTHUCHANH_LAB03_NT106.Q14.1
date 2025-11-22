@@ -201,6 +201,7 @@ namespace Bai04
             this.btnBook.TabIndex = 10;
             this.btnBook.Text = "ĐẶT VÉ";
             this.btnBook.UseVisualStyleBackColor = false;
+            this.btnBook.Click += new System.EventHandler(this.btnBook_Click);
             // 
             // cbMovie
             // 
