@@ -66,14 +66,13 @@ namespace Bai04
             // 
             // lblBigTitle
             // 
-            this.lblBigTitle.AutoSize = true;
             this.lblBigTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblBigTitle.Font = new System.Drawing.Font("UTM Mabella", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBigTitle.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBigTitle.ForeColor = System.Drawing.Color.White;
-            this.lblBigTitle.Location = new System.Drawing.Point(125, 156);
+            this.lblBigTitle.Location = new System.Drawing.Point(13, 129);
             this.lblBigTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBigTitle.Name = "lblBigTitle";
-            this.lblBigTitle.Size = new System.Drawing.Size(212, 309);
+            this.lblBigTitle.Size = new System.Drawing.Size(354, 387);
             this.lblBigTitle.TabIndex = 0;
             this.lblBigTitle.Text = "THÔNG\r\nTIN ĐẶT\r\nVÉ";
             this.lblBigTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -409,7 +408,6 @@ namespace Bai04
             this.pnlMovies.PerformLayout();
             this.pnlProgress.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
