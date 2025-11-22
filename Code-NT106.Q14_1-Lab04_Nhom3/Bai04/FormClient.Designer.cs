@@ -68,12 +68,12 @@ namespace Bai04
             // 
             this.lblBigTitle.AutoSize = true;
             this.lblBigTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblBigTitle.Font = new System.Drawing.Font("UTM Aurora", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBigTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBigTitle.ForeColor = System.Drawing.Color.White;
-            this.lblBigTitle.Location = new System.Drawing.Point(130, 183);
+            this.lblBigTitle.Location = new System.Drawing.Point(116, 146);
             this.lblBigTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBigTitle.Name = "lblBigTitle";
-            this.lblBigTitle.Size = new System.Drawing.Size(225, 270);
+            this.lblBigTitle.Size = new System.Drawing.Size(263, 207);
             this.lblBigTitle.TabIndex = 0;
             this.lblBigTitle.Text = "THÔNG\r\nTIN ĐẶT\r\nVÉ";
             this.lblBigTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -89,9 +89,9 @@ namespace Bai04
             this.pnlConnection.Controls.Add(this.lblPort);
             this.pnlConnection.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlConnection.Location = new System.Drawing.Point(0, 0);
-            this.pnlConnection.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlConnection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlConnection.Name = "pnlConnection";
-            this.pnlConnection.Size = new System.Drawing.Size(1417, 124);
+            this.pnlConnection.Size = new System.Drawing.Size(1260, 99);
             this.pnlConnection.TabIndex = 1;
             // 
             // pictureBox1
@@ -100,7 +100,7 @@ namespace Bai04
             this.pictureBox1.Location = new System.Drawing.Point(3, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(252, 154);
+            this.pictureBox1.Size = new System.Drawing.Size(224, 123);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -112,10 +112,10 @@ namespace Bai04
             this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConnect.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btnConnect.ForeColor = System.Drawing.Color.White;
-            this.btnConnect.Location = new System.Drawing.Point(1163, 30);
-            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnConnect.Location = new System.Drawing.Point(1034, 24);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(158, 61);
+            this.btnConnect.Size = new System.Drawing.Size(140, 49);
             this.btnConnect.TabIndex = 4;
             this.btnConnect.Text = "CONNECT";
             this.btnConnect.UseVisualStyleBackColor = false;
@@ -124,10 +124,10 @@ namespace Bai04
             // txtServerIP
             // 
             this.txtServerIP.Font = new System.Drawing.Font("Consolas", 11F);
-            this.txtServerIP.Location = new System.Drawing.Point(910, 46);
-            this.txtServerIP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtServerIP.Location = new System.Drawing.Point(809, 37);
+            this.txtServerIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtServerIP.Name = "txtServerIP";
-            this.txtServerIP.Size = new System.Drawing.Size(223, 33);
+            this.txtServerIP.Size = new System.Drawing.Size(199, 29);
             this.txtServerIP.TabIndex = 3;
             this.txtServerIP.Text = "127.0.0.1";
             // 
@@ -136,20 +136,20 @@ namespace Bai04
             this.lblIP.AutoSize = true;
             this.lblIP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblIP.ForeColor = System.Drawing.Color.White;
-            this.lblIP.Location = new System.Drawing.Point(775, 48);
+            this.lblIP.Location = new System.Drawing.Point(689, 38);
             this.lblIP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIP.Name = "lblIP";
-            this.lblIP.Size = new System.Drawing.Size(113, 28);
+            this.lblIP.Size = new System.Drawing.Size(96, 23);
             this.lblIP.TabIndex = 2;
             this.lblIP.Text = "SERVER IP:";
             // 
             // txtPort
             // 
             this.txtPort.Font = new System.Drawing.Font("Consolas", 11F);
-            this.txtPort.Location = new System.Drawing.Point(625, 46);
-            this.txtPort.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPort.Location = new System.Drawing.Point(556, 37);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(118, 33);
+            this.txtPort.Size = new System.Drawing.Size(105, 29);
             this.txtPort.TabIndex = 1;
             this.txtPort.Text = "8080";
             // 
@@ -158,10 +158,10 @@ namespace Bai04
             this.lblPort.AutoSize = true;
             this.lblPort.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblPort.ForeColor = System.Drawing.Color.White;
-            this.lblPort.Location = new System.Drawing.Point(535, 48);
+            this.lblPort.Location = new System.Drawing.Point(476, 38);
             this.lblPort.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPort.Name = "lblPort";
-            this.lblPort.Size = new System.Drawing.Size(69, 28);
+            this.lblPort.Size = new System.Drawing.Size(59, 23);
             this.lblPort.TabIndex = 0;
             this.lblPort.Text = "PORT:";
             // 
@@ -180,10 +180,10 @@ namespace Bai04
             this.pnlBooking.Controls.Add(this.lblPhone);
             this.pnlBooking.Controls.Add(this.txtName);
             this.pnlBooking.Controls.Add(this.lblName);
-            this.pnlBooking.Location = new System.Drawing.Point(375, 123);
-            this.pnlBooking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlBooking.Location = new System.Drawing.Point(333, 98);
+            this.pnlBooking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlBooking.Name = "pnlBooking";
-            this.pnlBooking.Size = new System.Drawing.Size(925, 373);
+            this.pnlBooking.Size = new System.Drawing.Size(822, 299);
             this.pnlBooking.TabIndex = 2;
             // 
             // btnBook
@@ -194,10 +194,10 @@ namespace Bai04
             this.btnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBook.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnBook.ForeColor = System.Drawing.Color.White;
-            this.btnBook.Location = new System.Drawing.Point(341, 267);
-            this.btnBook.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBook.Location = new System.Drawing.Point(303, 214);
+            this.btnBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBook.Name = "btnBook";
-            this.btnBook.Size = new System.Drawing.Size(225, 62);
+            this.btnBook.Size = new System.Drawing.Size(200, 50);
             this.btnBook.TabIndex = 10;
             this.btnBook.Text = "ĐẶT VÉ";
             this.btnBook.UseVisualStyleBackColor = false;
@@ -208,10 +208,10 @@ namespace Bai04
             this.cbMovie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMovie.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbMovie.FormattingEnabled = true;
-            this.cbMovie.Location = new System.Drawing.Point(577, 174);
-            this.cbMovie.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbMovie.Location = new System.Drawing.Point(513, 139);
+            this.cbMovie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbMovie.Name = "cbMovie";
-            this.cbMovie.Size = new System.Drawing.Size(308, 36);
+            this.cbMovie.Size = new System.Drawing.Size(274, 31);
             this.cbMovie.TabIndex = 9;
             // 
             // lblMovie
@@ -219,18 +219,18 @@ namespace Bai04
             this.lblMovie.AutoSize = true;
             this.lblMovie.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblMovie.ForeColor = System.Drawing.Color.White;
-            this.lblMovie.Location = new System.Drawing.Point(442, 176);
+            this.lblMovie.Location = new System.Drawing.Point(393, 141);
             this.lblMovie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMovie.Name = "lblMovie";
-            this.lblMovie.Size = new System.Drawing.Size(125, 28);
+            this.lblMovie.Size = new System.Drawing.Size(110, 23);
             this.lblMovie.TabIndex = 8;
             this.lblMovie.Text = "CHỌN PHIM:";
             // 
             // txtSeatCount
             // 
             this.txtSeatCount.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtSeatCount.Location = new System.Drawing.Point(739, 123);
-            this.txtSeatCount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSeatCount.Location = new System.Drawing.Point(657, 98);
+            this.txtSeatCount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSeatCount.Maximum = new decimal(new int[] {
             10,
             0,
@@ -242,7 +242,7 @@ namespace Bai04
             0,
             0});
             this.txtSeatCount.Name = "txtSeatCount";
-            this.txtSeatCount.Size = new System.Drawing.Size(146, 34);
+            this.txtSeatCount.Size = new System.Drawing.Size(130, 30);
             this.txtSeatCount.TabIndex = 7;
             this.txtSeatCount.Value = new decimal(new int[] {
             1,
@@ -255,10 +255,10 @@ namespace Bai04
             this.lblSeatCount.AutoSize = true;
             this.lblSeatCount.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblSeatCount.ForeColor = System.Drawing.Color.White;
-            this.lblSeatCount.Location = new System.Drawing.Point(572, 125);
+            this.lblSeatCount.Location = new System.Drawing.Point(508, 100);
             this.lblSeatCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSeatCount.Name = "lblSeatCount";
-            this.lblSeatCount.Size = new System.Drawing.Size(157, 28);
+            this.lblSeatCount.Size = new System.Drawing.Size(137, 23);
             this.lblSeatCount.TabIndex = 6;
             this.lblSeatCount.Text = "SỐ LƯỢNG GHẾ:";
             // 
@@ -271,10 +271,10 @@ namespace Bai04
             "Rạp 01 - Standard",
             "Rạp 02 - VIP",
             "Rạp 03 - IMAX"});
-            this.cbCinema.Location = new System.Drawing.Point(577, 70);
-            this.cbCinema.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbCinema.Location = new System.Drawing.Point(513, 56);
+            this.cbCinema.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbCinema.Name = "cbCinema";
-            this.cbCinema.Size = new System.Drawing.Size(308, 36);
+            this.cbCinema.Size = new System.Drawing.Size(274, 31);
             this.cbCinema.TabIndex = 5;
             // 
             // lblCinema
@@ -282,20 +282,20 @@ namespace Bai04
             this.lblCinema.AutoSize = true;
             this.lblCinema.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblCinema.ForeColor = System.Drawing.Color.White;
-            this.lblCinema.Location = new System.Drawing.Point(453, 75);
+            this.lblCinema.Location = new System.Drawing.Point(403, 60);
             this.lblCinema.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCinema.Name = "lblCinema";
-            this.lblCinema.Size = new System.Drawing.Size(113, 28);
+            this.lblCinema.Size = new System.Drawing.Size(99, 23);
             this.lblCinema.TabIndex = 4;
             this.lblCinema.Text = "CHỌN RẠP:";
             // 
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtPhone.Location = new System.Drawing.Point(158, 159);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPhone.Location = new System.Drawing.Point(140, 127);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(260, 34);
+            this.txtPhone.Size = new System.Drawing.Size(232, 30);
             this.txtPhone.TabIndex = 3;
             // 
             // lblPhone
@@ -303,20 +303,20 @@ namespace Bai04
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblPhone.ForeColor = System.Drawing.Color.White;
-            this.lblPhone.Location = new System.Drawing.Point(97, 162);
+            this.lblPhone.Location = new System.Drawing.Point(86, 130);
             this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(51, 28);
+            this.lblPhone.Size = new System.Drawing.Size(44, 23);
             this.lblPhone.TabIndex = 2;
             this.lblPhone.Text = "SĐT:";
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtName.Location = new System.Drawing.Point(158, 89);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtName.Location = new System.Drawing.Point(140, 71);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(260, 34);
+            this.txtName.Size = new System.Drawing.Size(232, 30);
             this.txtName.TabIndex = 1;
             // 
             // lblName
@@ -324,10 +324,10 @@ namespace Bai04
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(38, 94);
+            this.lblName.Location = new System.Drawing.Point(34, 75);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(114, 28);
+            this.lblName.Size = new System.Drawing.Size(101, 23);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "HỌ VÀ TÊN:";
             // 
@@ -337,10 +337,10 @@ namespace Bai04
             this.pnlMovies.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMovies.Controls.Add(this.lblMoviesTitle);
             this.pnlMovies.Controls.Add(this.flpMovieList);
-            this.pnlMovies.Location = new System.Drawing.Point(46, 548);
-            this.pnlMovies.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlMovies.Location = new System.Drawing.Point(41, 438);
+            this.pnlMovies.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMovies.Name = "pnlMovies";
-            this.pnlMovies.Size = new System.Drawing.Size(1345, 458);
+            this.pnlMovies.Size = new System.Drawing.Size(1196, 367);
             this.pnlMovies.TabIndex = 3;
             // 
             // lblMoviesTitle
@@ -349,10 +349,10 @@ namespace Bai04
             this.lblMoviesTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblMoviesTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblMoviesTitle.ForeColor = System.Drawing.Color.RosyBrown;
-            this.lblMoviesTitle.Location = new System.Drawing.Point(15, 8);
+            this.lblMoviesTitle.Location = new System.Drawing.Point(13, 6);
             this.lblMoviesTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMoviesTitle.Name = "lblMoviesTitle";
-            this.lblMoviesTitle.Size = new System.Drawing.Size(211, 32);
+            this.lblMoviesTitle.Size = new System.Drawing.Size(175, 28);
             this.lblMoviesTitle.TabIndex = 0;
             this.lblMoviesTitle.Text = "Phim Đang Chiếu";
             // 
@@ -360,10 +360,10 @@ namespace Bai04
             // 
             this.flpMovieList.AutoScroll = true;
             this.flpMovieList.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpMovieList.Location = new System.Drawing.Point(0, 46);
-            this.flpMovieList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.flpMovieList.Location = new System.Drawing.Point(0, 37);
+            this.flpMovieList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flpMovieList.Name = "flpMovieList";
-            this.flpMovieList.Size = new System.Drawing.Size(1344, 384);
+            this.flpMovieList.Size = new System.Drawing.Size(1195, 307);
             this.flpMovieList.TabIndex = 1;
             this.flpMovieList.WrapContents = false;
             // 
@@ -371,32 +371,32 @@ namespace Bai04
             // 
             this.pnlProgress.Controls.Add(this.progressBar1);
             this.pnlProgress.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlProgress.Location = new System.Drawing.Point(0, 1035);
-            this.pnlProgress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlProgress.Location = new System.Drawing.Point(0, 826);
+            this.pnlProgress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlProgress.Name = "pnlProgress";
-            this.pnlProgress.Size = new System.Drawing.Size(1417, 23);
+            this.pnlProgress.Size = new System.Drawing.Size(1260, 18);
             this.pnlProgress.TabIndex = 4;
             // 
             // progressBar1
             // 
             this.progressBar1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.progressBar1.Location = new System.Drawing.Point(0, 0);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(1417, 23);
+            this.progressBar1.Size = new System.Drawing.Size(1260, 18);
             this.progressBar1.TabIndex = 0;
             // 
             // FormClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1417, 1058);
+            this.ClientSize = new System.Drawing.Size(1260, 844);
             this.Controls.Add(this.pnlProgress);
             this.Controls.Add(this.pnlMovies);
             this.Controls.Add(this.pnlBooking);
             this.Controls.Add(this.lblBigTitle);
             this.Controls.Add(this.pnlConnection);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormClient";
             this.Text = "Client Booking - UIT Cinema";
             this.pnlConnection.ResumeLayout(false);
