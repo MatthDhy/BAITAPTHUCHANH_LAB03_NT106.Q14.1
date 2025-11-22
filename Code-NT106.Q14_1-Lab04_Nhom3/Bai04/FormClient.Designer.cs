@@ -119,6 +119,7 @@ namespace Bai04
             this.btnConnect.TabIndex = 4;
             this.btnConnect.Text = "CONNECT";
             this.btnConnect.UseVisualStyleBackColor = false;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // txtServerIP
             // 
