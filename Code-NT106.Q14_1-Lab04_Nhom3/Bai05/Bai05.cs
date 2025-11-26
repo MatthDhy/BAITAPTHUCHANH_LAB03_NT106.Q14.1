@@ -37,15 +37,12 @@ namespace Lab4_Bai5
 
             try
             {
-                [cite_start]// 2. Khởi tạo HttpClient 
                 using (HttpClient client = new HttpClient())
                 {
-                    [cite_start]// 3. Tạo MultipartFormDataContent (theo yêu cầu Lab) [cite: 501]
                     MultipartFormDataContent content = new MultipartFormDataContent();
                     content.Add(new StringContent(username), "username");
                     content.Add(new StringContent(password), "password");
 
-                    [cite_start]// 4. Gửi POST request [cite: 505]
                     HttpResponseMessage response = await client.PostAsync(url, content);
 
                     // 5. Đọc nội dung trả về
@@ -56,10 +53,8 @@ namespace Lab4_Bai5
 
                     rtbResponse.Clear(); // Xóa log cũ
 
-                    [cite_start]// 6. Kiểm tra kết quả [cite: 508]
                     if (response.IsSuccessStatusCode)
                     {
-                        [cite_start]// THÀNH CÔNG [cite: 464]
                         string tokenType = json["token_type"].ToString();
                         string accessToken = json["access_token"].ToString();
 
@@ -74,7 +69,6 @@ namespace Lab4_Bai5
                     }
                     else
                     {
-                        [cite_start]// THẤT BẠI [cite: 467]
                         string detail = json["detail"] != null ? json["detail"].ToString() : "Lỗi không xác định";
 
                         rtbResponse.SelectionColor = Color.Red;
