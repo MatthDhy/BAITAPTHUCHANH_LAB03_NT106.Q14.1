@@ -39,7 +39,6 @@
             this.btnPrev = new System.Windows.Forms.Button();
             this.lblPage = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
-            this.cbPageSize = new System.Windows.Forms.ComboBox();
             this.pnlPagination.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +49,7 @@
             this.lblTitle.ForeColor = System.Drawing.Color.IndianRed;
             this.lblTitle.Location = new System.Drawing.Point(20, 20);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(302, 46);
+            this.lblTitle.Size = new System.Drawing.Size(355, 54);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "HÔM NAY ĂN GÌ?";
             // 
@@ -59,7 +58,7 @@
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Location = new System.Drawing.Point(300, 30);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(0, 16);
+            this.lblWelcome.Size = new System.Drawing.Size(0, 20);
             this.lblWelcome.TabIndex = 1;
             // 
             // btnAll
@@ -118,7 +117,6 @@
             this.pnlPagination.Controls.Add(this.btnPrev);
             this.pnlPagination.Controls.Add(this.lblPage);
             this.pnlPagination.Controls.Add(this.btnNext);
-            this.pnlPagination.Controls.Add(this.cbPageSize);
             this.pnlPagination.Location = new System.Drawing.Point(20, 520);
             this.pnlPagination.Name = "pnlPagination";
             this.pnlPagination.Size = new System.Drawing.Size(600, 40);
@@ -137,7 +135,7 @@
             this.lblPage.AutoSize = true;
             this.lblPage.Location = new System.Drawing.Point(390, 10);
             this.lblPage.Name = "lblPage";
-            this.lblPage.Size = new System.Drawing.Size(14, 16);
+            this.lblPage.Size = new System.Drawing.Size(18, 20);
             this.lblPage.TabIndex = 1;
             this.lblPage.Text = "1";
             // 
@@ -148,19 +146,6 @@
             this.btnNext.Size = new System.Drawing.Size(30, 30);
             this.btnNext.TabIndex = 2;
             this.btnNext.Text = ">";
-            // 
-            // cbPageSize
-            // 
-            this.cbPageSize.FormattingEnabled = true;
-            this.cbPageSize.Items.AddRange(new object[] {
-            "5",
-            "10",
-            "20"});
-            this.cbPageSize.Location = new System.Drawing.Point(500, 8);
-            this.cbPageSize.Name = "cbPageSize";
-            this.cbPageSize.Size = new System.Drawing.Size(50, 24);
-            this.cbPageSize.TabIndex = 3;
-            this.cbPageSize.Text = "5";
             // 
             // MainForm
             // 
@@ -193,7 +178,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.FlowLayoutPanel flpList;
         private System.Windows.Forms.Panel pnlPagination;
-        private System.Windows.Forms.ComboBox cbPageSize;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Label lblPage;

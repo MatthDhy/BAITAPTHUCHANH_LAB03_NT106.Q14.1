@@ -173,18 +173,13 @@ namespace Bai04
                     // 2. MỞ TRÌNH DUYỆT WEB (Đây là cái bạn cần nè)
                     if (!string.IsNullOrEmpty(movie.DetailUrl))
                     {
-                        try
-                        {
-                            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                            {
-                                FileName = movie.DetailUrl,
-                                UseShellExecute = true
-                            });
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show("Không thể mở link: " + ex.Message);
-                        }
+                        // Mở FormBrowser (Cái form nhúng web mình vừa tạo)
+                        FormBrowser browser = new FormBrowser(movie.DetailUrl);
+                        browser.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Phim này chưa có link chi tiết!");
                     }
                 };
 
