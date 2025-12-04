@@ -30,15 +30,17 @@ namespace Bai07
             lblContributor.Text = $"Đóng góp: {contributor}";
 
             // Load ảnh từ URL
-            if (!string.IsNullOrEmpty(imageUrl))
+            if (!string.IsNullOrEmpty(imageUrl) && (imageUrl.StartsWith("http://") || imageUrl.StartsWith("https://")))
             {
                 try
                 {
-                    picFood.LoadAsync(imageUrl); // Load ảnh bất đồng bộ để không đơ form
+                    // Load ảnh bất đồng bộ (không làm đơ ứng dụng)
+                    picFood.LoadAsync(imageUrl);
                 }
                 catch
                 {
-                    // Nếu lỗi link ảnh thì bỏ qua hoặc load ảnh mặc định
+                    // Nếu link lỗi, load ảnh mặc định hoặc để trống
+                    // picFood.Image = Properties.Resources.default_food; // (Nếu bạn có ảnh mặc định)
                 }
             }
         }

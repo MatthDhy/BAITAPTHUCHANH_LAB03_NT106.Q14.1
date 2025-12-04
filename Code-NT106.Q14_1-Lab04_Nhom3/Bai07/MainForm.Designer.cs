@@ -161,6 +161,7 @@
             this.cbPageSize.Size = new System.Drawing.Size(50, 24);
             this.cbPageSize.TabIndex = 3;
             this.cbPageSize.Text = "5";
+            this.cbPageSize.SelectedIndexChanged += new System.EventHandler(this.cbPageSize_SelectedIndexChanged);
             // 
             // MainForm
             // 

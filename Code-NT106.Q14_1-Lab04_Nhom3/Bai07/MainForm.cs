@@ -40,18 +40,51 @@ namespace Bai07
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
-            if (currentListDish.Count > 0)
-            {
-                Random rnd = new Random();
-                int index = rnd.Next(currentListDish.Count);
-                Dish luckyDish = currentListDish[index];
-
-                MessageBox.Show($"Hôm nay ăn: {luckyDish.ten_mon_an}\nĐịa chỉ: {luckyDish.dia_chi}", "Kết quả Random");
-            }
-            else
+            if (currentListDish.Count == 0)
             {
                 MessageBox.Show("Không có món ăn nào trong danh sách để chọn!");
+                return;
             }
+
+            // 2. Chọn ngẫu nhiên
+            Random rnd = new Random();
+            int index = rnd.Next(currentListDish.Count);
+            Dish luckyDish = currentListDish[index];
+
+            // 3. Tạo một Form mới (giống như một cửa sổ popup)
+            Form resultForm = new Form();
+            resultForm.Text = "Kết quả: Hôm nay ăn món này!";
+            resultForm.StartPosition = FormStartPosition.CenterParent;
+            resultForm.FormBorderStyle = FormBorderStyle.FixedDialog;
+            resultForm.MaximizeBox = false;
+            resultForm.MinimizeBox = false;
+
+            // Đặt màu nền cho đẹp (trắng giống FoodItem)
+            resultForm.BackColor = Color.White;
+
+            // 4. Tạo một FoodItem mới và đổ dữ liệu Random vào
+            FoodItem itemDisplay = new FoodItem();
+
+            // Đổ dữ liệu món ăn may mắn vào
+            itemDisplay.SetData(
+                luckyDish.ten_mon_an,
+                luckyDish.gia.ToString(),
+                luckyDish.dia_chi,
+                luckyDish.nguoi_dong_gop,
+                luckyDish.hinh_anh
+            );
+
+            // Chỉnh vị trí cho đẹp
+            itemDisplay.Location = new Point(10, 10);
+
+            // 5. Thêm FoodItem vào Form và chỉnh kích thước Form bao quanh nó
+            resultForm.Controls.Add(itemDisplay);
+
+            // Tính toán kích thước Form sao cho vừa khít với FoodItem (+ viền)
+            resultForm.ClientSize = new Size(itemDisplay.Width + 20, itemDisplay.Height + 20);
+
+            // 6. Hiện Form lên
+            resultForm.ShowDialog();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -150,6 +183,23 @@ namespace Bai07
         private void flpList_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void cbPageSize_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbPageSize.SelectedItem != null && int.TryParse(cbPageSize.SelectedItem.ToString(), out int newSize))
+            {
+                // 2. Cập nhật biến toàn cục pageSize
+                pageSize = newSize;
+
+                // 3. Reset về trang 1 (để tránh lỗi đang ở trang 10 mà chỉnh size lớn lên thì trang 10 không còn tồn tại)
+                currentPage = 1;
+
+                // 4. Gọi lại hàm tải dữ liệu
+                // Lưu ý: Nếu bạn đang ở tab "Tôi đóng góp", logic này có thể cần cải tiến để nhớ trạng thái. 
+                // Nhưng cơ bản thì gọi LoadDishes() là được.
+                LoadDishes();
+            }
         }
     }
 }
