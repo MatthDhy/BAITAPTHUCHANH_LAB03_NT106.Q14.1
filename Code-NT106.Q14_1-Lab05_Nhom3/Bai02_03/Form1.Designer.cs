@@ -1,4 +1,4 @@
-﻿namespace Bai02
+﻿namespace Bai02_03
 {
     partial class Form1
     {
