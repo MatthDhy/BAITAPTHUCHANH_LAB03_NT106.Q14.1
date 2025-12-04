@@ -1,14 +1,16 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace Bai06
 {
     public partial class LoginForm : Form
     {
+        private string lastTokenType = "";
+        private string lastAccessToken = "";
+
         public LoginForm()
         {
             InitializeComponent();
@@ -30,23 +32,31 @@ namespace Bai06
                 };
 
                 var response = await client.PostAsync(url, form);
-                var json = await response.Content.ReadAsStringAsync();
+                string json = await response.Content.ReadAsStringAsync();
                 var obj = JObject.Parse(json);
 
                 if (!response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show(obj["detail"].ToString(), "Login failed");
+                    MessageBox.Show(obj["detail"].ToString(), "Login Failed");
                     return;
                 }
 
-                string tokenType = obj["token_type"].ToString();
-                string accessToken = obj["access_token"].ToString();
+                lastTokenType = obj["token_type"].ToString();
+                lastAccessToken = obj["access_token"].ToString();
 
-                // Mở UserForm & truyền token
-                UserForm uf = new UserForm(tokenType, accessToken);
+                // Mở UserForm
+                UserForm uf = new UserForm(lastTokenType, lastAccessToken);
                 uf.Show();
             }
         }
 
+        private void btnCopy_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(lastAccessToken))
+            {
+                Clipboard.SetText(lastAccessToken);
+                MessageBox.Show("Copied!");
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -8,8 +9,8 @@ namespace Bai06
 {
     public partial class UserForm : Form
     {
-        private string tokenType;
-        private string accessToken;
+        private readonly string tokenType;
+        private readonly string accessToken;
 
         public UserForm(string tType, string aToken)
         {
@@ -20,28 +21,78 @@ namespace Bai06
 
         private async void UserForm_Load(object sender, EventArgs e)
         {
+            // Load API docs bằng WebView2
+            await webView.EnsureCoreWebView2Async();
+            webView.Source = new Uri("https://nt106.uitiot.vn/docs");
+
+            // Load user info
             await LoadUserInfo();
         }
 
         private async Task LoadUserInfo()
         {
-            var url = "https://nt106.uitiot.vn/api/v1/user/me";
+            string url = "https://nt106.uitiot.vn/api/v1/user/me";
+
+            rtbLog.Clear();
+            rtbLog.AppendText("=== REQUEST ===\n");
+            rtbLog.AppendText("GET " + url + "\n");
+            rtbLog.AppendText("Authorization: " + tokenType + " " + accessToken + "\n\n");
 
             using (var client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Authorization =
                     new System.Net.Http.Headers.AuthenticationHeaderValue(tokenType, accessToken);
 
-                var response = await client.GetAsync(url);
-                var json = await response.Content.ReadAsStringAsync();
-                var obj = JObject.Parse(json);
+                try
+                {
+                    var response = await client.GetAsync(url);
+                    string json = await response.Content.ReadAsStringAsync();
 
-                txtId.Text = obj["id"]?.ToString();
-                txtUsername.Text = obj["username"]?.ToString();
-                txtFullname.Text = obj["full_name"]?.ToString();
-                txtEmail.Text = obj["email"]?.ToString();
+                    rtbLog.AppendText("=== RESPONSE ===\n" + json + "\n\n");
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("Server Error:\n" + json);
+                        return;
+                    }
+
+                    var obj = JObject.Parse(json);
+
+                    // Basic fields
+                    txtId.Text = obj["id"]?.ToString();
+                    txtUsername.Text = obj["username"]?.ToString();
+                    txtFullname.Text = obj["full_name"]?.ToString();
+                    txtEmail.Text = obj["email"]?.ToString();
+
+                    // Avatar
+                    string avatarUrl = obj["avatar"]?.ToString();
+
+                    if (!string.IsNullOrEmpty(avatarUrl))
+                    {
+                        using (var wc = new WebClient())
+                        {
+                            byte[] data = wc.DownloadData(avatarUrl);
+                            using (var ms = new System.IO.MemoryStream(data))
+                            {
+                                picAvatar.Image = System.Drawing.Image.FromStream(ms);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        picAvatar.Image = null;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    rtbLog.AppendText("Error: " + ex.Message);
+                }
             }
         }
 
+        private async void btnRefresh_Click(object sender, EventArgs e)
+        {
+            await LoadUserInfo();
+        }
     }
 }
