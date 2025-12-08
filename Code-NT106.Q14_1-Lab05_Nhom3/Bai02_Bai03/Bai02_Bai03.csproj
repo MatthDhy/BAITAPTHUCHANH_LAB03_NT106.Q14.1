@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{236D744C-1FB5-43D8-A3E7-220A096C56A0}</ProjectGuid>
+    <ProjectGuid>{744A9634-BE29-43EA-ABDC-B1FFAC157E30}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Bai01</RootNamespace>
-    <AssemblyName>Bai01</AssemblyName>
+    <RootNamespace>Bai02_Bai03</RootNamespace>
+    <AssemblyName>Bai02_Bai03</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -78,11 +78,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bai01.cs">
+    <Compile Include="ReadMail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bai01.Designer.cs">
-      <DependentUpon>Bai01.cs</DependentUpon>
+    <Compile Include="ReadMail.Designer.cs">
+      <DependentUpon>ReadMail.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +95,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReadMail.resx">
+      <DependentUpon>ReadMail.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
