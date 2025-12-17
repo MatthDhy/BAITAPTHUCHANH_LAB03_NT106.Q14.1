@@ -34,7 +34,7 @@ namespace Bai06.Services
 
             message.Body = builder.ToMessageBody();
 
-            using (var client = new SmtpClient())
+            using (var client = new MailKit.Net.Smtp.SmtpClient())
             {
                 client.Connect("smtp.gmail.com", 465, true);
                 client.Authenticate(from, password);
